@@ -1,0 +1,24 @@
+# Seminari per "Altre conoscenze utili per il mondo del lavoro" (3 CFU)
+#
+# Regola di completamento: 3 seminari da remoto in diretta OPPURE 2 in presenza.
+# Le due modalità non si sommano in modo misto senza conferma della segreteria.
+# Fonte degli annunci: "Avvisi di facoltà" sulla piattaforma e-learning.
+# Registrare ogni seminario lo stesso giorno.
+#
+# Formato di una voce:
+#   - data: 2026-11-18            # AAAA-MM-GG
+#     titolo: "..."
+#     organizzatore: "..."
+#     modalita: remoto | presenza  # remoto = in diretta; le registrazioni non valgono
+#     valido: true                 # false se la presenza non è stata attestata
+#     fonte_annuncio: "Avvisi di facoltà, <data>"
+#     appunti: |
+#       Tesi principali, relatori, riferimenti bibliografici e sitografici
+#       utili alla sezione corrispondente della relazione finale.
+
+regola:
+  remoto_richiesti: 3
+  presenza_richiesti: 2
+  misto_ammesso: false
+
+seminari: []

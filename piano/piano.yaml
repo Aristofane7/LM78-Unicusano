@@ -1,0 +1,80 @@
+# Piano di studi LM-78 Scienze Filosofiche Applicate — Unicusano, a.a. 2026/27
+# Fonte: riconoscimento CFU della segreteria, a.a. 2026/27. Verificare i nomi esatti su Sophia.
+#
+# Stati ammessi:
+#   insegnamenti: riconosciuto | da_sostenere | superato
+#   carenze:      da_colmare | colmata
+#   test_accesso: da_sostenere | superato
+# Regola: nessun cambio di stato senza una fonte (verbale, mail della segreteria,
+# schermata della piattaforma), da annotare nel campo `fonte` e nel messaggio di commit.
+
+corso: LM-78 Scienze Filosofiche Applicate
+ateneo: Università Niccolò Cusano
+anno_accademico: 2026/27
+cfu_totali: 120
+
+prerequisiti:
+  carenze:
+    - slug: filosofia-teoretica
+      nome: Filosofia teoretica
+      ssd: M-FIL/01
+      cfu: 9
+      stato: da_colmare
+      modalita: prova di idoneità libera, fuori calendario
+      data: null
+      fonte: riconoscimento CFU 2026/27
+    - slug: teoria-persona-relazione
+      nome: Teoria della persona e della relazione
+      ssd: M-FIL/01
+      cfu: 9
+      stato: da_colmare
+      modalita: prova di idoneità libera, fuori calendario
+      data: null
+      fonte: riconoscimento CFU 2026/27
+  test_accesso:
+    nome: Test d'accesso online
+    stato: da_sostenere
+    bloccante: true
+    dopo: carenze
+    data: null
+    fonte: riconoscimento CFU 2026/27
+
+insegnamenti:
+  # --- Riconosciuti: 33 CFU ---
+  - slug: estetica-arti-media
+    nome: Estetica delle arti e dei media
+    cfu: 9
+    stato: riconosciuto
+    da: Master FMC Unimarconi
+  - slug: neuroetica-etica-applicata
+    nome: Neuroetica ed etica applicata
+    cfu: 9
+    stato: riconosciuto
+    da: Master FMC (6+3)
+  - slug: storia-pensiero-scientifico
+    nome: Storia del pensiero scientifico
+    cfu: 6
+    stato: riconosciuto
+    da: Master FMC
+  - slug: lingua-inglese
+    nome: Lingua inglese
+    cfu: 3
+    stato: riconosciuto
+    da: LS 84/S Unimore
+  - slug: esame-a-scelta
+    nome: Esame a scelta
+    cfu: 6
+    stato: riconosciuto
+    da: LS 84/S Unimore
+
+  # --- Da sostenere: 87 CFU ---
+  - {slug: filosofia-processi-cognitivi-emotivi, nome: Filosofia dei processi cognitivi ed emotivi, ssd: M-FIL/01, cfu: 9, anno: 1, stato: da_sostenere, data_esame: null, voto: null, tesi_dottorato: true}
+  - {slug: neurodiritto, nome: Neurodiritto, ssd: IUS/20, cfu: 6, anno: 1, stato: da_sostenere, data_esame: null, voto: null}
+  - {slug: filosofia-medicina-scienza-vivente, nome: Filosofia della medicina e scienza del vivente, ssd: M-FIL/02, cfu: 9, anno: 1, stato: da_sostenere, data_esame: null, voto: null}
+  - {slug: teoria-linguaggio-comunicazione, nome: Teoria del linguaggio e della comunicazione C.A., ssd: M-FIL/05, cfu: 9, anno: 1, stato: da_sostenere, data_esame: null, voto: null}
+  - {slug: filosofia-complessita, nome: "Filosofia della complessità: metodi e storia", ssd: M-FIL/06, cfu: 12, anno: 1, stato: da_sostenere, data_esame: null, voto: null, tesi_dottorato: true}
+  - {slug: psicologia-processi-cognitivi, nome: Psicologia dei processi cognitivi, ssd: M-PSI/01, cfu: 9, anno: 2, stato: da_sostenere, data_esame: null, voto: null}
+  - {slug: filosofia-mente, nome: Filosofia della mente C.A., ssd: M-FIL/05, cfu: 6, anno: 2, stato: da_sostenere, data_esame: null, voto: null, tesi_dottorato: true}
+  - {slug: filosofia-psicologia, nome: Filosofia della psicologia, ssd: M-FIL/01, cfu: 9, anno: 2, stato: da_sostenere, data_esame: null, voto: null}
+  - {slug: altre-conoscenze, nome: Altre conoscenze utili per il mondo del lavoro, cfu: 3, anno: 2, stato: da_sostenere, data_esame: null, voto: null, note: "idoneità tramite seminari, vedi seminari/tracker.yaml"}
+  - {slug: prova-finale, nome: Prova finale, cfu: 15, anno: 2, stato: da_sostenere, data_esame: null, voto: null}

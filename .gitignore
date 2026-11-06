@@ -1,0 +1,22 @@
+# Documenti amministrativi: solo il README con i riferimenti è versionato
+admin/documenti/*
+!admin/documenti/README.md
+
+# Mai documenti scansionati o PDF di dispense nel repository
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.heic
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+__pycache__/
+.DS_Store
