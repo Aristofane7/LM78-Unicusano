@@ -9,7 +9,7 @@ Una riga per voce. `make status` legge la tabella:
 | Data | Tipo | Voce | Fatto |
 |---|---|---|---|
 | 14/11/2026 | evento | Prova finale di Storia della Filosofia Moderna presso UniPegaso (Parma): copre la carenza in Storia della filosofia | |
-| 18/11/2026 | evento | Convegno «Oriana Fallaci, "come un tarlo nella storia"» (primo seminario possibile) | |
+| 18/11/2026 | evento | Convegno «Oriana Fallaci, "come un tarlo nella storia"» (primo seminario possibile; programma in `seminari/programmi/2026-11-18-fallaci.md`) | |
 | 04/12/2026 | scadenza | Autocertificazione a Unicusano (termine: 30 giorni dall'iscrizione, pena il mancato riconoscimento dei titoli) | |
 | dopo l'immatricolazione | scadenza | Delibera della Giunta sul riconoscimento CFU: confrontarla con lo schema provvisorio del 06/11/2026 e aggiornare `piano.yaml` | |
 | dopo la verbalizzazione Pegaso | scadenza | Scaricare il certificato Pegaso, poi rinuncia agli studi a Pegaso | |

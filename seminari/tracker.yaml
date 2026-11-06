@@ -9,8 +9,10 @@
 #   - data: 2026-11-18            # AAAA-MM-GG
 #     titolo: "..."
 #     organizzatore: "..."
-#     modalita: remoto | presenza  # remoto = in diretta; le registrazioni non valgono
+#     stato: programmato | svolto  # contano solo i seminari svolti
+#     modalita: remoto | presenza | da_decidere  # remoto = in diretta; le registrazioni non valgono
 #     valido: true                 # false se la presenza non è stata attestata
+#     programma: seminari/programmi/<file>.md
 #     fonte_annuncio: "Avvisi di facoltà, <data>"
 #     appunti: |
 #       Tesi principali, relatori, riferimenti bibliografici e sitografici
@@ -21,4 +23,13 @@ regola:
   presenza_richiesti: 2
   misto_ammesso: false
 
-seminari: []
+seminari:
+  - data: 2026-11-18
+    titolo: "Oriana Fallaci, «come un tarlo nella storia». Scrittura, giornalismo, testimonianza"
+    organizzatore: "CUG Unicusano — Pari Opportunità"
+    stato: programmato
+    modalita: da_decidere   # Roma, Aula Anna Pirozzoli, oppure remoto in diretta
+    valido: null            # da confermare: attestazione della presenza e avviso di facoltà
+    fonte_annuncio: "locandina PDF fornita il 06/11/2026; verificare in Avvisi di facoltà"
+    programma: seminari/programmi/2026-11-18-fallaci.md
+    appunti: |

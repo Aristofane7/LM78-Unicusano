@@ -82,7 +82,9 @@ def main():
 
     sem = load("seminari/tracker.yaml")
     regola = sem["regola"]
-    validi = [s for s in (sem.get("seminari") or []) if s.get("valido", True)]
+    tutti = sem.get("seminari") or []
+    validi = [s for s in tutti if s.get("stato", "svolto") == "svolto" and s.get("valido") is not False]
+    programmati = [s for s in tutti if s.get("stato") == "programmato"]
     rem = sum(1 for s in validi if s.get("modalita") == "remoto")
     pres = sum(1 for s in validi if s.get("modalita") == "presenza")
     completo = rem >= regola["remoto_richiesti"] or pres >= regola["presenza_richiesti"]
@@ -93,6 +95,8 @@ def main():
         print("  requisito soddisfatto: inviare la relazione (≥ 10.000 battute) alla segreteria")
     elif rem and pres:
         print("  attenzione: modalità miste, non si sommano senza conferma della segreteria")
+    for s in programmati:
+        print(f"  programmato: {s['data']:%d/%m/%Y} — {s['titolo']} (modalità: {s.get('modalita', '?')})")
 
     voci = [v for v in scadenze("admin/scadenze.md") if not v["fatto"]]
     future = sorted((v for v in voci if v["data"] and v["data"] >= today), key=lambda v: v["data"])
