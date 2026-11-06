@@ -28,8 +28,9 @@ seminari:
     titolo: "Oriana Fallaci, «come un tarlo nella storia». Scrittura, giornalismo, testimonianza"
     organizzatore: "CUG Unicusano — Pari Opportunità"
     stato: programmato
-    modalita: da_decidere   # Roma, Aula Anna Pirozzoli, oppure remoto in diretta
-    valido: null            # da confermare: attestazione della presenza e avviso di facoltà
-    fonte_annuncio: "locandina PDF fornita il 06/11/2026; verificare in Avvisi di facoltà"
+    modalita: remoto        # in diretta (sincrona), decisione del 06/11/2026
+    valido: null            # da confermare dopo l'evento: come viene attestata la partecipazione da remoto
+    fonte_annuncio: "Avvisi di facoltà, 28/10/2026, segreteria di Filosofia: evento del ciclo di seminari per le Altre conoscenze"
+    link: "https://servizi.unicusano.it//bbb-conference/?module=room&meetingID=servizi_2089&attendee=true"
     programma: seminari/programmi/2026-11-18-fallaci.md
     appunti: |
