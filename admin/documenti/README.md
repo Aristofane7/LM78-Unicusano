@@ -6,7 +6,8 @@ in chiaro: i file veri restano fuori dal repository (sono esclusi da `.gitignore
 
 | Documento | Data | Dove è conservato | Note |
 |---|---|---|---|
-| Riconoscimento CFU a.a. 2026/27 | | | fonte di `piano/piano.yaml` |
+| Schema provvisorio di riconoscimento CFU (lettera della segreteria, .doc) | 06/11/2026 | fuori dal repository | provvisorio; fonte di `piano/piano.yaml` |
+| Delibera della Giunta sul riconoscimento CFU | | | attesa dopo l'immatricolazione |
 | Autocertificazione | | | scadenza 04/12/2026 |
 | Ricevuta tassa regionale | | | Sophia, manuale punto 3.1.3 |
 | Certificato UniPegaso | | | dopo la verbalizzazione |

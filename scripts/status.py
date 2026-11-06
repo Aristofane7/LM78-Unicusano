@@ -59,6 +59,12 @@ def main():
     print(f"  acquisiti esami:  {acq_esami}")
     print(f"  acquisiti totali: {ric + acq_esami}/{tot}")
     print(f"  da sostenere:     {mancanti} ({len(da)} attività)")
+    if piano.get("riconoscimento") == "provvisorio":
+        print("  (riconoscimento provvisorio: in attesa della delibera della Giunta)")
+    for anno in sorted({i["anno"] for i in ins if "anno" in i}):
+        s_anno = sum(i["cfu"] for i in ins if i.get("anno") == anno)
+        if s_anno != 60:
+            print(f"  ATTENZIONE: anno {anno} = {s_anno} CFU, attesi 60")
     if ric + acq_esami + mancanti != tot:
         print(f"  ATTENZIONE: la somma ({ric + acq_esami + mancanti}) non torna con {tot}")
 

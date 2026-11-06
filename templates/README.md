@@ -9,6 +9,6 @@ Non si duplicano qui gli scheletri del metodo: la fonte è il repository `Aristo
 - **Stile LaTeX:** PROTOCOLLO §8 (`pdflatex`, `mathpazo`, colori `blu`/`oro`, `ideabox`/`schemabox`/`orobox`).
 
 Adattamenti propri della LM-78 (vanno documentati anche in `CLAUDE.md`, sezione Eccezioni):
-- Nei nodi di Filosofia della complessità, Filosofia dei processi cognitivi ed emotivi e
+- Nei nodi di Filosofia della complessità, Teoria dei processi cognitivi ed emotivi e
   Filosofia della mente aggiungere una sezione «Punti di contatto con la tesi di dottorato».
 - Template specifico di questo repo: `seminari/relazione/template.md`.

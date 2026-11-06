@@ -1,5 +1,11 @@
 # Piano di studi LM-78 Scienze Filosofiche Applicate — Unicusano, a.a. 2026/27
-# Fonte: riconoscimento CFU della segreteria, a.a. 2026/27. Verificare i nomi esatti su Sophia.
+# Fonti:
+#   - piano ufficiale a.a. 2026/27: https://www.unicusano.it/lettere/piano-di-studi-scienze-filosofiche-applicate-lm-78
+#     (copia in piano/piano-ufficiale-2026-27.md, consultata il 06/11/2026): nomi, SSD, anni, CFU;
+#   - schema di riconoscimento CFU della segreteria, Roma 06/11/2026: PROVVISORIO, "informale e
+#     ufficioso". La Giunta di Dipartimento delibera solo all'immatricolazione, sulla base
+#     dell'autodichiarazione, e può riconoscere CFU diversi per eccesso o per difetto.
+# ssd = SSD 2015; ssd_2024 = nuovo codice (D.M. 2024).
 #
 # Stati ammessi:
 #   insegnamenti: riconosciuto | da_sostenere | superato
@@ -12,12 +18,14 @@ corso: LM-78 Scienze Filosofiche Applicate
 ateneo: Università Niccolò Cusano
 anno_accademico: 2026/27
 cfu_totali: 120
+riconoscimento: provvisorio   # diventa 'deliberato' con la delibera della Giunta (annotare la fonte)
 
 prerequisiti:
   carenze:
     - slug: filosofia-teoretica
       nome: Filosofia teoretica
       ssd: M-FIL/01
+      ssd_2024: PHIL-01/A
       cfu: 9
       stato: da_colmare
       modalita: prova di idoneità libera, fuori calendario
@@ -26,6 +34,7 @@ prerequisiti:
     - slug: teoria-persona-relazione
       nome: Teoria della persona e della relazione
       ssd: M-FIL/01
+      ssd_2024: PHIL-01/A
       cfu: 9
       stato: da_colmare
       modalita: prova di idoneità libera, fuori calendario
@@ -40,41 +49,56 @@ prerequisiti:
     fonte: riconoscimento CFU 2026/27
 
 insegnamenti:
-  # --- Riconosciuti: 33 CFU ---
-  - slug: estetica-arti-media
-    nome: Estetica delle arti e dei media
-    cfu: 9
-    stato: riconosciuto
-    da: Master FMC Unimarconi
+  # --- Riconosciuti (provvisori): 33 CFU. `da` = esame sostenuto (CFU di origine) ---
   - slug: neuroetica-etica-applicata
     nome: Neuroetica ed etica applicata
+    ssd: M-FIL/03
+    ssd_2024: PHIL-03/A
     cfu: 9
+    anno: 1
     stato: riconosciuto
-    da: Master FMC (6+3)
-  - slug: storia-pensiero-scientifico
-    nome: Storia del pensiero scientifico
-    cfu: 6
-    stato: riconosciuto
-    da: Master FMC
-  - slug: lingua-inglese
-    nome: Lingua inglese
-    cfu: 3
-    stato: riconosciuto
-    da: LS 84/S Unimore
+    da:
+      - "Master FMC: L'individuo e la persona: il dibattito sulla concezione della vita umana (6 CFU) -> 6"
+      - "Master FMC: Filosofia e comunicazione: l'impatto dei mass media sulle forme del pensiero (6 CFU) -> 3"
   - slug: esame-a-scelta
     nome: Esame a scelta
     cfu: 6
+    anno: 1
     stato: riconosciuto
-    da: LS 84/S Unimore
+    da: "LS 84/S Unimore: Strategie di internazionalizzazione - Strategie di investimento all'estero (4 CFU)"
+  - slug: storia-pensiero-scientifico
+    nome: Storia del pensiero scientifico
+    ssd: M-STO/05
+    ssd_2024: PHIL-02/B
+    cfu: 6
+    anno: 2
+    stato: riconosciuto
+    gruppo_scelta: "una tra Storia del pensiero economico (SECS-P/04), Storia della medicina (MED/02), Storia del pensiero scientifico (M-STO/05)"
+    da: "Master FMC: Storia della scienza (6 CFU)"
+  - slug: estetica-arti-media
+    nome: Estetica delle arti e dei media
+    ssd: M-FIL/04
+    ssd_2024: PHIL-04/A
+    cfu: 9
+    anno: 2
+    stato: riconosciuto
+    da: "Master FMC: Il dibattito contemporaneo sui temi dell'estetica (6 CFU)"
+  - slug: lingua-inglese
+    nome: Lingua inglese C.A.
+    cfu: 3
+    anno: 2
+    stato: riconosciuto
+    da: "LS 84/S Unimore: Lingua inglese II (4 CFU)"
 
   # --- Da sostenere: 87 CFU ---
-  - {slug: filosofia-processi-cognitivi-emotivi, nome: Filosofia dei processi cognitivi ed emotivi, ssd: M-FIL/01, cfu: 9, anno: 1, stato: da_sostenere, data_esame: null, voto: null, tesi_dottorato: true}
-  - {slug: neurodiritto, nome: Neurodiritto, ssd: IUS/20, cfu: 6, anno: 1, stato: da_sostenere, data_esame: null, voto: null}
-  - {slug: filosofia-medicina-scienza-vivente, nome: Filosofia della medicina e scienza del vivente, ssd: M-FIL/02, cfu: 9, anno: 1, stato: da_sostenere, data_esame: null, voto: null}
-  - {slug: teoria-linguaggio-comunicazione, nome: Teoria del linguaggio e della comunicazione C.A., ssd: M-FIL/05, cfu: 9, anno: 1, stato: da_sostenere, data_esame: null, voto: null}
-  - {slug: filosofia-complessita, nome: "Filosofia della complessità: metodi e storia", ssd: M-FIL/06, cfu: 12, anno: 1, stato: da_sostenere, data_esame: null, voto: null, tesi_dottorato: true}
-  - {slug: psicologia-processi-cognitivi, nome: Psicologia dei processi cognitivi, ssd: M-PSI/01, cfu: 9, anno: 2, stato: da_sostenere, data_esame: null, voto: null}
-  - {slug: filosofia-mente, nome: Filosofia della mente C.A., ssd: M-FIL/05, cfu: 6, anno: 2, stato: da_sostenere, data_esame: null, voto: null, tesi_dottorato: true}
-  - {slug: filosofia-psicologia, nome: Filosofia della psicologia, ssd: M-FIL/01, cfu: 9, anno: 2, stato: da_sostenere, data_esame: null, voto: null}
+  - {slug: teoria-processi-cognitivi-emotivi, nome: Teoria dei processi cognitivi ed emotivi, ssd: M-FIL/01, ssd_2024: PHIL-01/A, cfu: 9, anno: 1, stato: da_sostenere, data_esame: null, voto: null, tesi_dottorato: true}
+  - {slug: neurodiritto, nome: Neurodiritto, ssd: IUS/20, ssd_2024: GIUR-17/A, cfu: 6, anno: 1, stato: da_sostenere, data_esame: null, voto: null}
+  - {slug: teoria-medicina-scienza-vivente, nome: Teoria della medicina e scienza del vivente, ssd: M-FIL/02, ssd_2024: PHIL-02/A, cfu: 9, anno: 1, stato: da_sostenere, data_esame: null, voto: null, docenti: Boem}
+  - {slug: teoria-linguaggio-comunicazione, nome: Teoria del linguaggio e della comunicazione C.A., ssd: M-FIL/05, ssd_2024: PHIL-04/B, cfu: 9, anno: 1, stato: da_sostenere, data_esame: null, voto: null}
+  - {slug: filosofia-complessita, nome: "Filosofia della complessità: metodi e storia", ssd: M-FIL/06, ssd_2024: PHIL-05/A, cfu: 12, anno: 1, stato: da_sostenere, data_esame: null, voto: null, tesi_dottorato: true}
+  - {slug: psicologia-processi-cognitivi, nome: Psicologia dei processi cognitivi, ssd: M-PSI/01, ssd_2024: PSIC-01/A, cfu: 9, anno: 2, stato: da_sostenere, data_esame: null, voto: null}
+  - {slug: filosofia-mente, nome: Filosofia della mente C.A., ssd: M-FIL/05, ssd_2024: PHIL-04/B, cfu: 6, anno: 2, stato: da_sostenere, data_esame: null, voto: null, docenti: "Barbieri, Pace Giannotta", tesi_dottorato: true}
+  # ssd_2024: la lettera di riconoscimento dice PHIL-01/A, la pagina del piano PHIL-04/A. Con M-FIL/01 la corrispondenza attesa è PHIL-01/A: da verificare su Sophia.
+  - {slug: filosofia-psicologia, nome: Filosofia della psicologia, ssd: M-FIL/01, ssd_2024: PHIL-01/A, cfu: 9, anno: 2, stato: da_sostenere, data_esame: null, voto: null}
   - {slug: altre-conoscenze, nome: Altre conoscenze utili per il mondo del lavoro, cfu: 3, anno: 2, stato: da_sostenere, data_esame: null, voto: null, note: "idoneità tramite seminari, vedi seminari/tracker.yaml"}
   - {slug: prova-finale, nome: Prova finale, cfu: 15, anno: 2, stato: da_sostenere, data_esame: null, voto: null}
